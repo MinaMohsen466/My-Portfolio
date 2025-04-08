@@ -1,11 +1,17 @@
 import { useState } from 'react';
-import { FiMenu, FiX, FiGlobe, FiChevronRight, FiDownload } from 'react-icons/fi';
+import { FiMenu, FiX, FiGlobe, FiChevronRight, FiDownload, FiSun, FiMoon } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Nav.css';
 
-const Nav = ({ language, setLanguage }) => {
+const Nav = ({ language, setLanguage, darkMode, setDarkMode }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
+
+  const toggleDarkMode = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    localStorage.setItem('darkMode', JSON.stringify(newMode));
+  };
 
   const menuItems = language ? [
     { text: "أعمالي", href: "#work" },
@@ -20,9 +26,8 @@ const Nav = ({ language, setLanguage }) => {
   ];
 
   const handleDownload = () => {
-    // Create a temporary anchor tag
     const link = document.createElement('a');
-    link.href = '/soldkw.docx'; // Make sure this file is in your public folder
+    link.href = '/soldkw.docx';
     link.download = 'soldkw.docx';
     document.body.appendChild(link);
     link.click();
@@ -82,16 +87,29 @@ const Nav = ({ language, setLanguage }) => {
           </ul>
         </nav>
 
-        {/* Language Toggle */}
-        <motion.button
-          className="language-btn"
-          onClick={() => setLanguage(!language)}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <FiGlobe />
-          {language ? "EN" : "AR"}
-        </motion.button>
+        <div className="nav-controls">
+          {/* Dark/Light Mode Toggle */}
+          <motion.button
+            className="mode-toggle"
+            onClick={toggleDarkMode}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {darkMode ? <FiSun /> : <FiMoon />}
+          </motion.button>
+
+          {/* Language Toggle */}
+          <motion.button
+            className="language-btn"
+            onClick={() => setLanguage(!language)}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FiGlobe />
+            {language ? "EN" : "AR"}
+          </motion.button>
+        </div>
 
         {/* Mobile Toggle */}
         <button 
@@ -137,6 +155,26 @@ const Nav = ({ language, setLanguage }) => {
                   <button className="mobile-resume-btn">
                     <FiDownload className="download-icon" />
                     {language ? "السيرة الذاتية" : "Resume"}
+                  </button>
+                </motion.li>
+
+                {/* Dark/Light Mode Toggle - Mobile */}
+                <motion.li
+                  whileTap={{ scale: 0.9 }}
+                  onClick={toggleDarkMode}
+                >
+                  <button className="mobile-mode-btn">
+                    {darkMode ? (
+                      <>
+                        <FiSun />
+                        {language ? "الوضع الفاتح" : "Light Mode"}
+                      </>
+                    ) : (
+                      <>
+                        <FiMoon />
+                        {language ? "الوضع الداكن" : "Dark Mode"}
+                      </>
+                    )}
                   </button>
                 </motion.li>
               </ul>

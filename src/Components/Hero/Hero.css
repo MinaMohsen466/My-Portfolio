@@ -1,10 +1,11 @@
 /* Hero Section Styles */
 .hero-section {
     padding: 4rem 2rem;
-    background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
-    color: white;
+    background: linear-gradient(to bottom, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    color: var(--text);
     position: relative;
     overflow: hidden;
+    transition: var(--transition);
   }
   
   .hero-container {
@@ -28,8 +29,9 @@
   
   .hero-greeting {
     font-size: 1.25rem;
-    color: #94a3b8;
+    color: var(--text-light);
     margin-bottom: 0.5rem;
+    transition: var(--transition);
   }
   
   /* Animated Name Styles */
@@ -68,15 +70,17 @@
   .hero-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #e2e8f0;
+    color: var(--text);
     margin-bottom: 1.5rem;
+    transition: var(--transition);
   }
   
   .hero-description {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #cbd5e1;
+    color: var(--text-light);
     margin-bottom: 2rem;
+    transition: var(--transition);
   }
   
   .hero-buttons {
@@ -109,7 +113,7 @@
   }
   
   .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, .15);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
