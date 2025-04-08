@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* Enable Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Dark Mode (Default) */
 :root {
   --primary: #6366f1;

@@ -14,13 +14,13 @@ const Nav = ({ language, setLanguage, darkMode, setDarkMode }) => {
   };
 
   const menuItems = language ? [
-    { text: "أعمالي", href: "#work" },
-    { text: "معلومات عني", href: "#about" },
+    { text: "أعمالي", href: "#projects-section" },
+    { text: "معلومات عني", href: "#home" },
     { text: "مهاراتي", href: "#skills" },
     { text: "تواصل", href: "#contact" }
   ] : [
-    { text: "Work", href: "#work" },
-    { text: "About", href: "#about" },
+    { text: "Projects", href: "#projects-section" },
+    { text: "About", href: "#home" },
     { text: "Skills", href: "#skills" },
     { text: "Contact", href: "#contact" }
   ];

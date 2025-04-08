@@ -2,7 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { FiExternalLink, FiMail } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
 import './Hero.css';
-import heroImage from '../../../assets/img1.webp'; // Replace with your image
+import heroImage from '../../../assets/MyImg.jpeg'; // Replace with your image
 
 const Hero = ({ language }) => {
   const [displayName, setDisplayName] = useState('');
@@ -77,8 +77,8 @@ const Hero = ({ language }) => {
             <h2 className="hero-title">{language ? "مطور واجهات أمامية" : "Frontend Developer"}</h2>
             <p className="hero-description">
               {language 
-                ? "أبني تجارب رقمية استثنائية وسهلة الوصول للويب. أركز على التصميم المتجاوب، الأداء، والتقنيات الحديثة."
-                : "I build exceptional and accessible digital experiences for the web. Focusing on responsive design, performance, and modern technologies."}
+                ? "أنا مطور واجهات أمامية شغوف، أتمتع بنظرة ثاقبة للتصميم، وألتزم بإنشاء تطبيقات ويب سهلة الاستخدام وسريعة الاستجابة. بفضل خبرتي في أطر عمل JavaScript الحديثة وفهمي العميق لمبادئ واجهة المستخدم/تجربة المستخدم، أتمكن من سد الفجوة بين التصميم والوظائف."
+                : "I'm a passionate frontend developer with a keen eye for design and a commitment to creating intuitive, responsive web applications. With a  foundation in modern JavaScript frameworks and a deep understanding of UI/UX principles, I bridge the gap between design and functionality."}
             </p>
             <div className="hero-buttons">
               <motion.a
