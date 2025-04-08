@@ -39,7 +39,7 @@ const Nav = ({ language, setLanguage }) => {
       <div className="nav-container">
         {/* Logo/Brand */}
         <a href="#" className="nav-logo">
-          {`<Portfolio/>`}
+          {`<MINA.M/>`}
         </a>
 
         {/* Desktop Navigation */}
