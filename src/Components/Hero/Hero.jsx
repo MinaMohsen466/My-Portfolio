@@ -2,7 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { FiExternalLink, FiMail } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
 import './Hero.css';
-import heroImage from '../../../assets/MyImg.jpeg'; // Replace with your image
+import heroImage from '../../../assets/myImg.jpeg'; // Replace with your image
 
 const Hero = ({ language }) => {
   const [displayName, setDisplayName] = useState('');
