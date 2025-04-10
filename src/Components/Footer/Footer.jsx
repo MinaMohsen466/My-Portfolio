@@ -25,8 +25,8 @@ const Footer = ({ language }) => {
           <div className="footer-links">
             <h3 className="footer-heading">{language ? "روابط سريعة" : "Quick Links"}</h3>
             <ul className="footer-nav">
-              <li><a href="#about">{language ? "معلومات عني" : "About"}</a></li>
-              <li><a href="#work">{language ? "أعمالي" : "Projects"}</a></li>
+              <li><a href="#home">{language ? "معلومات عني" : "About"}</a></li>
+              <li><a href="#projects-section">{language ? "أعمالي" : "Projects"}</a></li>
               <li><a href="#contact">{language ? "تواصل" : "Contact"}</a></li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ const Footer = ({ language }) => {
             </a>
             <div className="footer-social">
               <motion.a 
-                href="https://github.com/minamohsen" 
+                href="https://github.com/MinaMohsen466" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -49,7 +49,7 @@ const Footer = ({ language }) => {
                 <FiGithub />
               </motion.a>
               <motion.a 
-                href="https://linkedin.com/in/minamohsen" 
+                href="https://www.linkedin.com/in/mina-mohsen-a71711191/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}
@@ -58,7 +58,7 @@ const Footer = ({ language }) => {
                 <FiLinkedin />
               </motion.a>
               <motion.a 
-                href="https://twitter.com/minamohsen" 
+                href="https://twitter.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 whileHover={{ y: -5 }}

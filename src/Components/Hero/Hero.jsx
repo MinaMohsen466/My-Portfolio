@@ -82,7 +82,7 @@ const Hero = ({ language }) => {
             </p>
             <div className="hero-buttons">
               <motion.a
-                href="#work"
+                href="#projects-section"
                 className="btn btn-primary"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

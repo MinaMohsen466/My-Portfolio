@@ -18,7 +18,7 @@ const Projects = ({ language }) => {
   const projectsData = [
     {
       id: 1,
-      title: 'E-Commerce Dashboard',
+      title: 'inanc E-Commerce',
       category: ['shopify'],
       image: projectImg1, // Using proper image reference
       description: language ? 'لوحة تحكم متكاملة للتجارة الإلكترونية' : 'A comprehensive dashboard for e-commerce store owners',
@@ -27,12 +27,12 @@ const Projects = ({ language }) => {
     },
     {
       id: 2,
-      title: 'Portfolio Website',
+      title: 'serellekw E-Commerce',
       category: ['react'],
       image: projectImg1, // Using proper image reference
       description: language ? 'موقع احترافي لعرض الأعمال' : 'Professional portfolio website with modern design',
-      tags: ['React', 'Framer Motion'],
-      demoLink: 'https://portfolio-demo.example.com',
+      tags: ['shopify'],
+      demoLink: 'https://serellekw.com/',
     },
     {
       id: 3,

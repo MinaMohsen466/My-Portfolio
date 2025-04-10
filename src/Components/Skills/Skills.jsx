@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiCode, FiLayout, FiZap, FiGlobe } from 'react-icons/fi';
-import { SiHtml5, SiCss3, SiSass, SiJavascript, SiReact, SiShopify, SiAdobephotoshop, SiAdobepremierepro } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiSass, SiJavascript, SiReact, SiShopify, SiAdobephotoshop, SiAdobepremierepro, SiRedux } from 'react-icons/si';
+import { FaGithub } from 'react-icons/fa';
+import { TbApi } from 'react-icons/tb';
 import './Skills.css';
 
 const Skills = ({ language }) => {
@@ -12,6 +14,9 @@ const Skills = ({ language }) => {
     { name: 'Sass', icon: <SiSass className="skill-tech-icon" /> },
     { name: 'JavaScript (ES6+)', icon: <SiJavascript className="skill-tech-icon" /> },
     { name: 'React', icon: <SiReact className="skill-tech-icon" /> },
+    { name: 'Redux', icon: <SiRedux className="skill-tech-icon" /> },
+    { name: 'GitHub', icon: <FaGithub className="skill-tech-icon" /> },
+    { name: 'RESTful API', icon: <TbApi className="skill-tech-icon" /> },
     { name: 'Shopify', icon: <SiShopify className="skill-tech-icon" /> },
     { name: 'Adobe Photoshop', icon: <SiAdobephotoshop className="skill-tech-icon" /> },
     { name: 'Adobe Premiere', icon: <SiAdobepremierepro className="skill-tech-icon" /> },

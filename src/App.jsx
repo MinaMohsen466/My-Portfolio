@@ -5,6 +5,7 @@ import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import GetInTouch from './Components/GetInTouch/GetInTouch';
 import Footer from './Components/Footer/Footer';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 function App() {
   const [language, setLanguage] = useState(false); // false for English, true for Arabic
@@ -33,6 +34,7 @@ function App() {
      <Projects language={language} />
      <GetInTouch language={language} />
      <Footer language={language} />
+     <ScrollToTop />
     </>
   )
 }

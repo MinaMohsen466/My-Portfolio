@@ -27,8 +27,8 @@ const Nav = ({ language, setLanguage, darkMode, setDarkMode }) => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/soldkw.docx';
-    link.download = 'soldkw.docx';
+    link.href = '/assets/resume.pdf';
+    link.download = 'Mina_Mohsen_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
