@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FiMenu, FiX, FiGlobe, FiChevronRight, FiDownload, FiSun, FiMoon } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Nav.css';
+import resume from '../../../assets/resume.pdf'
 
 const Nav = ({ language, setLanguage, darkMode, setDarkMode }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -27,7 +28,7 @@ const Nav = ({ language, setLanguage, darkMode, setDarkMode }) => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/assets/resume.pdf';
+    link.href = resume;
     link.download = 'Mina_Mohsen_Resume.pdf';
     document.body.appendChild(link);
     link.click();
