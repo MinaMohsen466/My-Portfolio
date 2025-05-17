@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiExternalLink } from 'react-icons/fi';
 import './Projects.css';
-// import raqya from '../../../assets/img/raqya.png'
-import inanc from '../../../assets/img/inanc.png'
-import serelle from '../../../assets/img/serelle.png';
-import n21 from '../../../assets/img/n21.png'
-import mubaaderServices from '../../../assets/img/mubaaderServices.png'
-import theqaInvest from '../../../assets/img/theqaInvest.png'
+import raqya from '../../../assets/raqya.png'
+import inanc from '../../../assets/inanc.png'
+import serelle from '../../../assets/serelle.png';
+import n21 from '../../../assets/n21.png'
+import mubaaderServices from '../../../assets/mubaaderServices.png'
+import theqaInvest from '../../../assets/theqaInvest.png'
 
 const Projects = ({ language }) => {
   // Projects data
@@ -14,7 +14,7 @@ const Projects = ({ language }) => {
     {
       id: 1,
       title: 'RAYQA E-Commerce',
-      image: inanc,
+      image: raqya,
       description: language ? 'موقع احترافي لعرض الأعمال لموقع ملابس عصري يوفر تجربة تسوق سهلة وتصميم متجاوب مع جميع الأجهزة' : 'Modern fashion website offering a smooth shopping experience and responsive design.',
       tags: ['shopify'],
       demoLink: 'https://raqya.store/',
