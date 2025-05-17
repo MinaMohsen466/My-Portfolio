@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiExternalLink } from 'react-icons/fi';
 import './Projects.css';
-import raqya from '../../../assets/img/raqya.png'
+// import raqya from '../../../assets/img/raqya.png'
 import inanc from '../../../assets/img/inanc.png'
 import serelle from '../../../assets/img/serelle.png';
 import n21 from '../../../assets/img/n21.png'
@@ -14,7 +14,7 @@ const Projects = ({ language }) => {
     {
       id: 1,
       title: 'RAYQA E-Commerce',
-      image: raqya,
+      image: inanc,
       description: language ? 'موقع احترافي لعرض الأعمال لموقع ملابس عصري يوفر تجربة تسوق سهلة وتصميم متجاوب مع جميع الأجهزة' : 'Modern fashion website offering a smooth shopping experience and responsive design.',
       tags: ['shopify'],
       demoLink: 'https://raqya.store/',
