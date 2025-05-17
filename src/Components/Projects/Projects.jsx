@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiExternalLink } from 'react-icons/fi';
 import './Projects.css';
-import raqya from '../../../assets/img/RAQYA.PNG'
-import INANC from '../../../assets/img/INANC.PNG'
-import serelle from '../../../assets/img/serelle.PNG';
-import n21 from '../../../assets/img/n21.PNG'
-import mubaaderServices from '../../../assets/img/mubaaderServices.PNG'
-import theqaInvest from '../../../assets/img/theqaInvest.PNG'
+import raqya from '../../../assets/img/raqya.png'
+import inanc from '../../../assets/img/inanc.png'
+import serelle from '../../../assets/img/serelle.png';
+import n21 from '../../../assets/img/n21.png'
+import mubaaderServices from '../../../assets/img/mubaaderServices.png'
+import theqaInvest from '../../../assets/img/theqaInvest.png'
 
 const Projects = ({ language }) => {
   // Projects data
@@ -15,14 +15,14 @@ const Projects = ({ language }) => {
       id: 1,
       title: 'RAYQA E-Commerce',
       image: raqya,
-      description: language ? 'موقع احترافي لعرض الأعمالموقع ملابس عصري يوفر تجربة تسوق سهلة وتصميم متجاوب مع جميع الأجهزة' : 'Modern fashion website offering a smooth shopping experience and responsive design.',
+      description: language ? 'موقع احترافي لعرض الأعمال لموقع ملابس عصري يوفر تجربة تسوق سهلة وتصميم متجاوب مع جميع الأجهزة' : 'Modern fashion website offering a smooth shopping experience and responsive design.',
       tags: ['shopify'],
       demoLink: 'https://raqya.store/',
     },
     {
       id: 2,
       title: 'INANC E-Commerce',
-      image: INANC,
+      image: inanc,
       description: language ? 'موقع احترافي لعرض الأعمالموقع ملابس عصري يوفر تجربة تسوق سهلة وتصميم متجاوب مع جميع الأجهزة' : 'Modern fashion website offering a smooth shopping experience and responsive design.',
       tags: ['Shopify'],
       demoLink: 'https://inanckw.com/',
